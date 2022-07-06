@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <header class="header-content ">
+        <div class="logo-content">
+            <img src="../assets/logo.png" alt="">
+            <div>
+                <span class="add-text">ADDRESS</span><br>
+                <span class="add-text add-payroll">BOOK</span>
+            </div>
+        </header>
+        <div id="formId" class="form-content">
+            <form class="form" action="#" onreset="resetForm()" onsubmit="save();return false">
+                <div class="form-head">PERSON ADDRESS FORM</div>
+                <div class="column-content">
+                    <label class="label text">Full Name</label>
+                    <input class="input" type="text" id="name" name="name"  required>
+                    <error-output class="text-error" for="text"></error-output>
+                </div>
+                <div class="column-content">
+                    <label class="label text">Address</label>
+                    <input style ="padding: 60px" class="input" type="text" id="name" name="name" required>
+                    <error-output class="text-error" for="text"></error-output>
+                </div>
+                    <select name="city" id="city">
+                        <option value="select city">Select City</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="pune">Pune</option>
+                        <option value="aunrangabad">Aunrangabad</option>
+                        <option value="banglore">Banglore</option>
+                        <option value="hydrabad">Hydrabad</option>
+                    </select>
+                    <select name="state" id="state">
+                        <option value="select state">Select State</option>
+                        <option value="maharstra">Maharastra</option>
+                        <option value="kara">Karanataka</option>
+                        <option value="andhra">Andhra Pradesh</option>
+                    </select>
+                    <label class="label text" >
+                        <input class="input" type="text" id="name" name="name" placeholder="Zipcode"  required>
+                    </label>
+            <form class="form" action="#" onreset="resetForm()" onsubmit="save();return false">
+                <div class="column-content">
+                    <label class="label text">Phone Number</label>
+                    <input class="input" type="text" id="name" name="name"  required>
+                    <error-output class="text-error" for="text"></error-output>
+                </div>
+                <div class="buttonParent">
+                    <a href="../index.html"></a>
+                    <div class="add-reset">
+                        <button type="add" class="addButton button" id="addButton">Add</button>
+                        <button type="reset" class="resetButton button" id="resetButton">Reset</button>
+                    </div>
+                    </div> 
+                <script> src ="../js/script.js" </script>
+                <script> src ="../js/address.js" </script>               
+            </form>
+        </div>
+</body>
+</html>
